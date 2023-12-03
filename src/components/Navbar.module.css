@@ -1,0 +1,83 @@
+
+
+/* laptop/desktop view */
+
+.navbar{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:1px;
+    background-color: rgb(32, 170, 124);
+    font-size: 23px;
+    position:fixed;
+    top:0;
+    width: 100%;
+    
+}
+.navbar ul{
+    display: flex;
+    width: 64%;
+    justify-content: space-around;
+    padding-right: 2%;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(245, 240, 241)
+}
+
+.intro{
+    font-style:inherit;
+    color: white;
+    margin-left:32px;
+}
+.icon{
+    margin-right: 4px;
+    /* top:50%; */
+    color: white;
+    font-size:17px;
+}
+a:hover{
+    color:rgb(97, 90, 90);
+}
+/* for tablet view  */
+@media only screen and (max-width: 768px) {
+    .navbar ul {
+        width: 100%; 
+        padding-right: 2%;
+    }
+    li{
+        font-size: 20px;
+    }
+    .intro{
+        font-size: 26px;
+    }
+}
+
+/*  for mobile view  */
+@media only screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column; 
+        align-items: center; 
+        background-color:rgb(135, 235, 201) ;
+    }
+    .intro{
+        font-size: 22px;
+    }
+
+    .navbar ul {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        gap: 2px;
+        padding-left: 2%;
+        padding-right: 4%;
+    }
+    .navbar li{
+        color: rgb(245, 243, 247);
+        font-size: 15px;
+        font-weight:600;
+    }
+}

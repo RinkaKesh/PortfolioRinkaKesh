@@ -1,0 +1,87 @@
+
+.skillContainer {
+    margin-left:31%;
+    margin-right: 30%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 500px;
+    
+
+    
+  }
+  .htag{
+    color:rgb(28, 122, 143);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .skillCard {
+    width:100%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  
+  
+  .card {
+    background: linear-gradient(180deg,#00d4ff 0%, #83839e 35%, #625ea8 100% );
+    box-shadow: rgba(255, 255, 255, 0.324) 0px 1px 1px 0px inset, rgba(40, 183, 150, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin: auto;
+    text-align: center;
+    color:rgb(32, 170, 124) ;
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+ 
+   .skillname{
+    color:white;
+  } 
+
+  /* for tablet view  */
+  @media only screen and (max-width: 768px) {
+    .skillContainer {
+      margin-left: 12%;
+      margin-right: 6%;
+  }
+    .skillCard {
+      width:100%;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      justify-content: center;
+      gap:5px;
+      /* flex-wrap: wrap; */
+      /* overflow: scroll; */
+    }
+
+    .card {
+      width:150px; 
+      text-align: center;
+      font-size: 10px;
+      
+    }
+}
+
+/* for mobile view */
+@media only screen and (max-width: 480px) {
+    .skillContainer {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .skillCard{
+      width:100%;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      justify-content: center;
+      gap:3px;
+    }
+
+    .card {
+        width:110px; 
+        text-align: center;
+        font-size: 10px;
+    }
+}

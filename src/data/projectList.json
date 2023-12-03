@@ -1,0 +1,21 @@
+[
+     { 
+          "id" :1,
+          "title" :"Fiverr Clone",
+          "image" :"fiverrProject.PNG",
+          "description":"Fiverr Clone is a platform that offers a marketplace for freelancers to offer services and clients to find and hire them",
+          "source":"",
+          "live":"",
+          "techstack":["VScode","React","Vite","CSS","NPM","Vercel","Git"]
+     },
+     {
+          "id" :2,
+          "title" :"Weather Map",
+          "image" :"WeatherMap.PNG",
+          "description":"Weather Map is a city-based weather application that fetches real-time weather information and includes a map to view the city's geographical location  upon entering the city name",
+          
+          "source":"",
+          "live":"",
+          "techstack":["VScode","HTML","CSS","JavaScript","Vercel","Git"]
+     }
+]
