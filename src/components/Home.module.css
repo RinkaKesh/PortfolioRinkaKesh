@@ -57,10 +57,10 @@ button:hover{
     font-size:40px;
 }
 .image{
-    width:300px;
-    height:300px;
+    width:420px; 
+    height:380px;
     border-radius:50%;
-    box-shadow:3px 3px 3px 4px gray;
+    box-shadow:3px 3px 3px 4px rgb(212, 209, 209); 
 
 }
 /* button::before{
@@ -113,5 +113,12 @@ button:hover::before{
         margin: 0; 
         text-align: center;
         padding-bottom: 12px;
+    }
+    .image{
+        width:350px; 
+        height:300px;
+        border-radius:50%;
+        box-shadow:3px 3px 3px 4px rgb(212, 209, 209); 
+    
     }
 }

@@ -35,7 +35,7 @@ const handleResumeClick = () => {
         </h2>
         <button onClick={handleResumeClick}>Resume</button>
       </div>
-      <img src="rinka'sPhoto.PNG" alt="" className={style.image} />
+      <img src="Rinka_img.jpg" alt="Rinka's Image" className={style.image} />
     </div>
   );
 }
