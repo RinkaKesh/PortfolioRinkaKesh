@@ -44,6 +44,12 @@ a:hover{
 }
 /* for tablet view  */
 @media only screen and (max-width: 768px) {
+    .navbar{
+        /* padding: 3px; */
+        flex-direction: column;
+        background-color:rgb(32, 170, 124) ;
+        padding-right:21px;
+    }
     .navbar ul {
         width: 100%; 
         padding-right: 2%;
@@ -53,6 +59,7 @@ a:hover{
     }
     .intro{
         font-size: 26px;
+        margin-bottom: 4px;
     }
 }
 
@@ -61,10 +68,12 @@ a:hover{
     .navbar {
         flex-direction: column; 
         align-items: center; 
-        background-color:rgb(135, 235, 201) ;
+        padding-right: 5px;
+    
     }
     .intro{
         font-size: 22px;
+        margin-bottom: 5px;
     }
 
     .navbar ul {
@@ -73,7 +82,7 @@ a:hover{
         align-items: center;
         gap: 2px;
         padding-left: 2%;
-        padding-right: 4%;
+        padding-right: 5%;
     }
     .navbar li{
         color: rgb(245, 243, 247);

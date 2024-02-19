@@ -6,7 +6,9 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { FaNodeJs } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-
+import { SiExpress } from "react-icons/si";
+import { BiLogoMongodb } from "react-icons/bi";
+import { TbBrandPython } from "react-icons/tb";
 
 
 
@@ -50,6 +52,24 @@ const Skill = () => {
       title:"GitHub",
       logo:FaGithub,
       color:"black"
+
+    },
+    {
+      id:7,
+      title:"MongoDB",
+      logo:BiLogoMongodb,
+      color:"green"
+
+    }, {
+      id:8,
+      title:"Express.js",
+      logo:SiExpress,
+      color:"silver"
+    }, {
+      id:9,
+      title:"Python",
+      logo:TbBrandPython,
+      color:"yellow"
 
     }
   ]

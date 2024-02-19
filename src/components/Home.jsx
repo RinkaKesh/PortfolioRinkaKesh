@@ -5,7 +5,7 @@ import { MdWavingHand } from "react-icons/md"
 
 function Home() {
  const [typeEffect]=useTypewriter({
-  words:["React Frontend Developer","Tech Enthusiastic"],
+  words:["React Frontend Developer","MERN Developer","Tech Enthusiast"],
   loop:{},
   typeSpeed:70,
   deleteSpeed:30,

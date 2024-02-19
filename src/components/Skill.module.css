@@ -1,11 +1,12 @@
 
 .skillContainer {
-    margin-left:31%;
+    /* margin-left:31%;
     margin-right: 30%;
     margin-top: 30px;
     margin-bottom: 30px;
+     */
+     margin: 0 auto;
     max-width: 500px;
-    
 
     
   }
@@ -46,6 +47,7 @@
     .skillContainer {
       margin-left: 12%;
       margin-right: 6%;
+      margin-top: 90px;
   }
     .skillCard {
       width:100%;
