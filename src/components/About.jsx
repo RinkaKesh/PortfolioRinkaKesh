@@ -3,14 +3,33 @@ import { FaPen } from "react-icons/fa";
 import style from './About.module.css'
 
 const About = () => {
- 
+
   return (
     <div id='about' className={style.container}>
-      <h2 className={style.title}>About Me </h2>
-      <span className={style.icon}><FaPen/></span>
-      <h3 className={style.heading}>Frontend Developer</h3>
-      <p className={style.text}>Proficient in <span style={{color:"darkorange",fontWeight:"bold"}}>HTML</span> ,<span style={{color:"blue",fontWeight:"bold"}}>CSS</span> ,<span style={{color:"yellow",fontWeight:"bold"}}>JavaScript</span> ,<span style={{color:"Green",fontWeight:"bold"}}>Node.js</span> ,<br /> 
-      <span style={{color:"skyblue",fontWeight:"bold"}}>React.js</span> ,<span style={{color:"black",fontWeight:"bold"}}>Git</span>,<span style={{color:"green",fontWeight:"bold"}}>MongoDB</span> ,<span style={{color:"gray",fontWeight:"bold"}}>Express.js</span>   Passionate about creating seamless Web experience and eager to expand skills in innovative Web Development projects Open to exciting opportunities and collaborations.</p>
+      <h2 className={style.title}>About Me ...<FaPen className={style.icon}/></h2>
+      {/* <span className={style.icon}><FaPen /></span> */}
+      <ul>
+        <li>Frontend Development
+        <p className={style.paragraph}>
+          Proficient in HTML, CSS, JavaScript, and React.js.
+          Passionate about creating intuitive and responsive user interfaces to enhance user experience.
+        </p>
+        </li>
+
+        <li>Backend Development
+        <p className={style.paragraph}>
+          Experienced with MongoDB and Express.js for building scalable backend systems and APIs.
+          Familiar with handling databases and implementing backend logic to support frontend applications.
+        </p>
+        </li>
+
+        <li>Data Structures & Algorithms (DSA)
+        <p className={style.paragraph}>
+          Strong understanding of fundamental data structures such as arrays, linked lists, trees, and graphs.
+          Proficient in algorithm design and optimization techniques, including two-pointer and sliding window algorithms.
+        </p>
+        </li>
+      </ul>
     </div>
   )
 }

@@ -1,8 +1,9 @@
 .container {
     margin: 120px auto; /* Vertically 100px from the top, horizontally centered */
-    max-width: 500px;
-    padding: 20px;
+    max-width:500px;
+    padding: 20px 25px;
     box-shadow: 2px 2px 2px 3px gray;
+    word-wrap: break-word;
 }
 
 .title {
@@ -11,42 +12,50 @@
     font-weight: 700;
     font-size: 32px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.heading {
+.container ul{
+    padding-inline-start:14px;
+}
+.container li{
     margin-top: 3px;
-    color: blue;
-    font-size: 26px;
+    color: rgb(37, 96, 85);
+    font-weight: 700;
+    font-size: 26px
 }
 
-.text {
+.paragraph {
     margin-top: 4px;
-    color: rgb(123, 118, 118);
-    font-size: 22px;
-    font-weight: 400;
+    color: rgb(62, 59, 59);
+    font-size: 21px;
+    font-weight: 200;
+    text-align: justify;
 }
+
 
 .icon {
-    color: rgb(64, 64, 160);
+    color: rgb(104, 104, 156);
+    font-size: 21px;
 }
 
 /* Tablet */
 @media screen and (max-width: 768px) {
     .container {
-        margin-left: 5%;
-        margin-right: 5%;
-        width:60%
+        margin:110px auto auto 50px;
+        width: 70%;
     }
 
     .title {
         font-size: 28px;
     }
 
-    .heading {
+    .container li {
         font-size: 24px;
     }
 
-    .text {
+    .paragraph{
         font-size: 16px;
     }
 }
@@ -54,21 +63,23 @@
 /* Mobile  */
 @media screen and (max-width: 480px) {
     .container {
-        margin-left: 5%;
+         /* margin-left: 5%;
         margin-right: 5%;
-        margin-top:110px;
-        width: 80%;
+        margin-top:110px; */
+        margin:110px auto auto 50px;
+        width: 70%;
     }
 
     .title {
         font-size: 24px;
     }
 
-    .heading {
+    .container li{
         font-size: 20px;
     }
 
-    .text {
+    .paragraph{
         font-size: 16px;
+        text-align: justify;
     }
 }
