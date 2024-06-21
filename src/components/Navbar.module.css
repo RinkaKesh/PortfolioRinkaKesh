@@ -12,6 +12,7 @@
   z-index: 2;
   margin: 0 auto;
   background-color:rgb(21, 134, 96); 
+  padding: 12px 30px;
   
   
 }
@@ -20,13 +21,13 @@
   font-size:30px;
   font-weight: 600;
   letter-spacing: 2px;
-  /* color: white; */
-  background: url("public/image/title.jpg")no-repeat;
+  color: white;
+  /* background: url("public/image/title.jpg")no-repeat;
   background-size: cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  
+   */
 }
 
 
@@ -60,7 +61,7 @@
   color: white;
   text-decoration: none;
 }
-
+/* responsive  */
 @media screen and (max-width: 922px) {
   .navbar {
     flex-direction: column;
@@ -118,7 +119,7 @@
     z-index: 1;
   }
 }
-
+/* responsive  */
 @media screen and (max-width: 480px) {
   .navbar {
     flex-direction: column;

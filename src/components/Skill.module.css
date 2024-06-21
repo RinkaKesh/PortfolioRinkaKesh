@@ -1,89 +1,155 @@
-
+/* Skill.module.css */
 .skillContainer {
-    /* margin-left:31%;
-    margin-right: 30%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-     */
-     margin: 0 auto;
-    max-width: 500px;
-
-    
-  }
-  .htag{
-    color:rgb(28, 122, 143);
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .skillCard {
-    width:100%;
-    display: grid;
-    grid-template-columns:repeat(3,1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  
-  
-  .card {
-    background: linear-gradient(180deg,#00d4ff 0%, #83839e 35%, #625ea8 100% );
-    box-shadow: rgba(255, 255, 255, 0.324) 0px 1px 1px 0px inset, rgba(40, 183, 150, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    margin: auto;
-    text-align: center;
-    color:rgb(32, 170, 124) ;
-    width: 150px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
- 
-   .skillname{
-    color:white;
-  } 
-
-  /* for tablet view  */
-  @media only screen and (max-width: 768px) {
-    .skillContainer {
-      margin:110px auto auto 50px;
-        width: 70%;
-  }
-    .skillCard {
-      width:100%;
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      justify-content: center;
-      gap:5px;
-      /* flex-wrap: wrap; */
-      /* overflow: scroll; */
-    }
-
-    .card {
-      width:150px; 
-      text-align: center;
-      font-size: 10px;
-      
-    }
+  text-align: center;
+  padding: 50px 20px;
+  /* background-color: #f5f5f5; */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-/* for mobile view */
-@media only screen and (max-width: 480px) {
-    .skillContainer {
-      margin:0 auto;
-      margin-top: 110px;
-      width: 80%;
-    }
-    .skillCard{
-      width:100%;
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      justify-content: center;
-      gap:3px;
-    }
+.htag {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
-    .card {
-        width:110px; 
-        text-align: center;
-        font-size: 10px;
-    }
+.skillCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.logo {
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+
+.skillname {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Responsive Design */
+
+/* 1400px and above */
+@media (min-width: 1400px) {
+  .card {
+    width: 180px;
+  }
+}
+
+/* 1200px to 1399px */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .card {
+    width: 160px;
+  }
+}
+
+/* 950px to 1199px */
+@media (min-width: 950px) and (max-width: 1199px) {
+  .card {
+    width: 140px;
+  }
+
+  .skillname {
+    font-size: 1rem;
+  }
+}
+
+/* 768px to 949px */
+@media (min-width: 768px) and (max-width: 949px) {
+  .card {
+    width: 130px;
+  }
+
+  .htag {
+    font-size: 2.2rem;
+  }
+
+  .skillname {
+    font-size: 0.9rem;
+  }
+}
+
+/* 600px to 767px */
+@media (min-width: 600px) and (max-width: 767px) {
+  .card {
+    width: 120px;
+    padding: 15px;
+  }
+
+  .htag {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .skillname {
+    font-size: 1rem;
+  }
+}
+
+/* 480px to 599px */
+@media (min-width: 480px) and (max-width: 599px) {
+  .card {
+    width: 110px;
+    padding: 15px;
+  }
+
+  .htag {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .skillname {
+    font-size: 0.9rem;
+  }
+}
+
+/* Below 480px */
+@media (max-width: 479px) {
+  .card {
+    width: 100px;
+    padding: 10px;
+  }
+
+  .skillContainer {
+    padding: 30px 10px;
+  }
+
+  .htag {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .skillname {
+    font-size: 0.8rem;
+  }
 }

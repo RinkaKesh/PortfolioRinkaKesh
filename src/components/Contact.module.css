@@ -1,97 +1,188 @@
-.container{
-    margin-top:100px;
-    color: rgb(225, 225, 236);
-    display: flex;
-    flex-direction:row;
-    justify-content:center;
-     width:60%;
-    padding:30px 30px;
-    /* gap:100px; */
-    margin-left:18%;
-
-    
-
-
-}
-
-.title h2{
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing:1px;
-}
-.title p{
-    font-size: 27px;
-    font-weight: 400;
-    letter-spacing:1px;
-}
-.linkContainer{
+/* Contact.module.css */
+.container {
+    padding: 50px 20px;
+    /* background-color: #f5f5f5; */
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .title p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .linkContainer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: center;
     gap: 20px;
-    list-style: none;
-    color: beige;
-}
-.link{
-    display: flex;
-    /* align-items: center; */
-    gap: 20px;
-    color:white;
+  }
+  
+  .link {
+    color: teal;
     text-decoration: none;
-    font-size: 24px;
-}
-.link a{
-     color: bisque;
-}
-.icon{
-    font-size: 20px;
-    margin-top:6px;
-
-}
-/* tablet */
-@media screen and (max-width: 768px) {
-    .container {
-        margin-left: 32%;
-        margin-right: 15%;
-        width: 70%;
-        flex-direction:row;
-        margin-left: 10%;
-        margin-right: 9%;
-        /* gap:60px; */
-    }
-
-    .linkContainer {
-        align-items: flex-start;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .container {
-        padding: 20px;
-        flex-direction:row;
-        margin-left: 9%;
-        margin-right: 5%;
-
-    }
-
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .link:hover {
+    color: rgb(154, 117, 190);
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+  }
+  
+  /* Responsive Design */
+  
+  /* 1299px and above */
+  @media (min-width: 1300px) {
     .title h2 {
-        font-size: 27px;
-        /* margin-left: 7%;
-        margin-right: 6%;
-         */
+      font-size: 2.8rem;
     }
-
+  
     .title p {
-        font-size: 20px;
-       
+      font-size: 1.4rem;
     }
-    
-
+  
     .link {
-        font-size:14px;
+      font-size: 1.3rem;
     }
-
+  
     .icon {
-        font-size: 15px;
+      font-size: 1.8rem;
     }
-}
+  }
+  
+  /* 1150px to 1299px */
+  @media (min-width: 1150px) and (max-width: 1299px) {
+    .title h2 {
+      font-size: 2.6rem;
+    }
+  
+    .title p {
+      font-size: 1.3rem;
+    }
+  
+    .link {
+      font-size: 1.2rem;
+    }
+  
+    .icon {
+      font-size: 1.7rem;
+    }
+  }
+  
+  /* 950px to 1149px */
+  @media (min-width: 950px) and (max-width: 1149px) {
+    .title h2 {
+      font-size: 2.4rem;
+    }
+  
+    .title p {
+      font-size: 1.2rem;
+    }
+  
+    .link {
+      font-size: 1.1rem;
+    }
+  
+    .icon {
+      font-size: 1.6rem;
+    }
+  }
+  
+  /* 768px to 949px */
+  @media (min-width: 768px) and (max-width: 949px) {
+    .title h2 {
+      font-size: 2.2rem;
+    }
+  
+    .title p {
+      font-size: 1.1rem;
+    }
+  
+    .link {
+      font-size: 1rem;
+    }
+  
+    .icon {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* 600px to 767px */
+  @media (min-width: 600px) and (max-width: 767px) {
+    .title h2 {
+      font-size: 2rem;
+    }
+  
+    .title p {
+      font-size: 1rem;
+    }
+  
+    .link {
+      font-size: 0.9rem;
+    }
+  
+    .icon {
+      font-size: 1.4rem;
+    }
+  }
+  
+  /* 480px to 599px */
+  @media (min-width: 480px) and (max-width: 599px) {
+    .title h2 {
+      font-size: 1.8rem;
+    }
+  
+    .title p {
+      font-size: 0.9rem;
+    }
+  
+    .link {
+      font-size: 0.8rem;
+    }
+  
+    .icon {
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* Below 480px */
+  @media (max-width: 479px) {
+    .title h2 {
+      font-size: 1.6rem;
+    }
+  
+    .title p {
+      font-size: 0.8rem;
+    }
+  
+    .link {
+      font-size: 0.7rem;
+    }
+  
+    .icon {
+      font-size: 1.2rem;
+    }
+  }
+  
