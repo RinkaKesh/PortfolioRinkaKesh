@@ -32,7 +32,7 @@ const Home=()=>{
           Resume <MdDownload className={style.downloadIcon} />
         </button>
       </div>
-      <div>
+      <div className={style.right}>
       <img src="Rinka_img.jpg" alt="Rinka's Image" className={style.image} />
       </div>
     </div>

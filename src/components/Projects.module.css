@@ -11,6 +11,29 @@
     color: #333;
     text-transform: uppercase;
     letter-spacing: 2px;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  .title:hover {
+    color: rgb(44, 102, 102);
+  }
+  
+  .title::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 100%;
+    height: 2px; 
+    background-color:crimson; 
+    transition: width 0.3s ease; 
+    transform: scaleX(0); 
+    transform-origin: bottom left; 
+  }
+  
+  .title:hover::after {
+    transform: scaleX(1); 
   }
   
   .projects {
