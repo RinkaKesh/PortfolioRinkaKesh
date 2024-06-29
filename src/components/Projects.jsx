@@ -17,16 +17,16 @@ const Projects = () => {
          description:"A website similar to Fiverr.com that provides a freelancing marketplace for individuals to offer services and clients to discover and hire them..",
          source:"https://github.com/masai-course/rinka_kesh_cap05_289/tree/master/tech/FiverrProject",
          live:"https://fiverr-clone-tau-nine.vercel.app/",
-         techstack:["VScode","React","Vite","CSS","NPM","Vercel","Git"]
+         techstack:["VScode","React.js","Vite","CSS","NPM","Vercel","Git"]
     },
     {
          id :2,
-         title :"Weather Map",
+         title :"Weather App",
          image :"weatherMap.PNG",
-         description:"Weather Map is a city-based weather application that retrieves real-time weather information and features a map to display the geographical location of the entered city.",
+         description:"Weather Map is a city-based weather application that retrieves real-time weather information of the entered city.",
          source:"https://github.com/RinkaKesh/WeatherMap",
-         live:"https://reliable-centaur-a96f0a.netlify.app/",
-         techstack:["VScode","HTML","CSS","JavaScript","Netlify","Git"]
+         live:"https://weather-map-4537.vercel.app/",
+         techstack:["NPM","React.js","Vite","Chakra UI","Vercel","Git"]
     }
 ]
 
