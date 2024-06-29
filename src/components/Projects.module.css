@@ -25,7 +25,7 @@
     left: 0;
     bottom: -5px; 
     width: 100%;
-    height: 2px; 
+    height: 3px; 
     background-color:crimson; 
     transition: width 0.3s ease; 
     transform: scaleX(0); 
