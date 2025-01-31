@@ -1,0 +1,173 @@
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease;
+    text-align: center;
+    width: 100%;
+  }
+  .title:hover {
+    color: rgb(44, 102, 102);
+  }
+  
+  .title::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 100%;
+    height: 3px; 
+    background-color:crimson; 
+    transition: width 0.3s ease; 
+    transform: scaleX(0); 
+    transform-origin: bottom left; 
+  }
+  
+  .title:hover::after {
+    transform: scaleX(1); 
+  }
+
+  .linkContainer {
+   margin-top: 20px;
+  }
+  .link {
+    color: teal;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .link:hover {
+    color: #0056b3;
+  }
+  
+  .icon {
+    font-size: 1.2rem;
+  }
+  .jobtitle{
+    font-size: 1.6rem;
+    color: rgb(22, 111, 81);
+    margin-bottom: 0.4rem;
+           
+   }
+   .company, .tenure{
+    color: #7f8c8d;
+    font-size: 1.3rem;
+   }
+   .descriptionList{
+    font-size: 1.2rem;
+   }
+   
+   /* 950px to 1149px */
+   @media (min-width: 950px) and (max-width: 1149px) {
+    /* .container {
+      padding: 40px 20px;
+    } */
+    .jobtitle{
+      font-size: 1.2rem;
+     }
+     .company, .tenure{
+      font-size: 0.9rem;
+     }
+    .title {
+      font-size: 2.3rem;
+    }
+    .descriptionList{
+      font-size: 1.2rem;
+     }
+     
+  }
+  
+  /* 768px to 949px */
+  @media (min-width: 768px) and (max-width: 949px) {
+    /* .container {
+      padding: 40px 15px;
+    }
+   */
+   .jobtitle{
+    font-size: 1.2rem;
+   }
+   .company, .tenure{
+    font-size: 0.9rem;
+   }
+    .title {
+      font-size: 2.1rem;
+    }
+    .descriptionList{
+      font-size: 0.9rem;
+     }
+     
+  }
+  
+  /* 600px to 767px */
+  @media (min-width: 600px) and (max-width: 767px) {
+    /* .container {
+      padding: 30px 10px;
+    }
+   */
+
+   .jobtitle{
+    font-size: 1.1rem;
+   }
+   .company, .tenure{
+    font-size: 0.9rem;
+   }
+    .title {
+      font-size: 1.9rem;
+    }
+    .descriptionList{
+      font-size: 0.9rem;
+     }
+     
+  }
+  
+  /* 480px to 599px */
+  @media (min-width: 480px) and (max-width: 599px) {
+    /* .container {
+      padding: 30px 5px;
+    }
+   */
+   .jobtitle{
+    font-size: 1.1rem;
+   }
+   .company, .tenure{
+    font-size:0.9rem;
+   }
+    .title {
+      font-size: 1.7rem;
+    }
+    .descriptionList{
+      font-size: 0.9rem;
+     }
+     
+  }
+  
+  /* Below 480px */
+  @media (max-width: 479px) {
+    /* .container {
+      padding: 20px 5px;
+    }
+   */
+   .jobtitle{
+    font-size: 1.1rem;
+   }
+   .company, .tenure{
+    font-size: 0.9rem;
+   }
+    .title {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+    .descriptionList{
+      font-size: 0.9rem;
+     }
+     
+  }
+  

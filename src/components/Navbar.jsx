@@ -39,6 +39,9 @@ const Navbar = () => {
             <a href="#skill"><FaLaptopCode/>Skill</a>
           </li>
           <li>
+            <a href="#projects"><LiaProjectDiagramSolid/>Experience</a>
+          </li>
+          <li>
             <a href="#projects"><LiaProjectDiagramSolid/>Projects</a>
           </li>
           <li>

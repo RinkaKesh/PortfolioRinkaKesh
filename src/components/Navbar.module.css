@@ -100,11 +100,11 @@
     align-items:flex-start;
     gap: 13px;
     border-radius: 10px;
-    background: rgb(27, 132, 82);
+    /* background: rgb(27, 132, 82); */
     background: linear-gradient(
       0deg,
-      rgba(10, 198, 151, 0.2) 0%,
-      rgb(55, 87, 146) 100%
+      rgba(39, 74, 65, 0.2) 0%,
+      rgb(14, 65, 65) 100%
     );
     padding: 24px 30px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
@@ -136,7 +136,7 @@
     flex-direction: column;
     align-items: flex-end;
     gap:5px;
-    z-index: 3;
+    z-index: 10;
   }
 
   .menuBtn {
@@ -158,12 +158,13 @@
     gap: 7px;
     font-size: 16px;
     border-radius: 10px;
-    background: rgb(27, 132, 82);
+    /* background: rgb(27, 132, 82); */
     background: linear-gradient(
       0deg,
-      rgba(13, 79, 62, 0.2) 0%,
-      rgb(90, 103, 127) 100%
+      rgba(23, 93, 75, 0.2) 0%,
+      rgb(54, 104, 104) 100%
     );
+
     padding: 10px 20px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
   }
