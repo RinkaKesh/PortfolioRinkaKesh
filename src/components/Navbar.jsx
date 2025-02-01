@@ -6,7 +6,7 @@ import { FaHome } from "react-icons/fa";
 import { IoWoman } from "react-icons/io5";
 import { FaLaptopCode } from "react-icons/fa";
 import { LiaProjectDiagramSolid } from "react-icons/lia";
-import { MdContactPhone } from "react-icons/md";
+import { MdContactPhone,MdWorkOutline } from "react-icons/md";
 
 
 const Navbar = () => {
@@ -39,7 +39,7 @@ const Navbar = () => {
             <a href="#skill"><FaLaptopCode/>Skill</a>
           </li>
           <li>
-            <a href="#projects"><LiaProjectDiagramSolid/>Experience</a>
+            <a href="#experience"><MdWorkOutline/>Experience</a>
           </li>
           <li>
             <a href="#projects"><LiaProjectDiagramSolid/>Projects</a>

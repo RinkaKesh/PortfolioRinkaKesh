@@ -1,7 +1,11 @@
+@import "tailwindcss";
+
+
+
 *{
   margin: 0;
 padding: 0;
-box-sizing: border-box;
+box-sizing: border-box !important
 }
 
 body,html{
@@ -9,6 +13,8 @@ body,html{
 width: 100%;
 height: 100%;
 overflow-x: hidden;
+  scroll-behavior: smooth;
+
 /* background:url("public/JShine.jpg")no-repeat ; */
 /* background-size: cover; */
 

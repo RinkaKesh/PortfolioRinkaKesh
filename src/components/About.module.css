@@ -7,10 +7,7 @@
 
   padding: 40px;
 }
-.penIcon{
-  color: rgb(98, 98, 192);
-  font-size:28px;
-}
+
 .imageContainer {
   flex: 1;
   margin-right: 20px; 
@@ -40,10 +37,25 @@ strong{
   font-size: 24px;
 }
 
-.heading {
+.headingContainer {
+  display: flex;
+  align-items: center; /* Ensure vertical alignment */
+  gap: 8px; /* Adjust spacing between text and icon */
   font-size: 2rem;
-  margin-bottom: 20px;
 }
+
+.heading {
+  margin: 0; /* Remove any extra margin */
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.penIcon {
+  font-size: 1.8rem;
+  color: rgb(98, 98, 192);
+}
+
 
 .paragraph {
   font-size: 19px;
@@ -59,7 +71,7 @@ strong{
     padding: 20px;
     margin-top: 150px;
   }
-
+  
   .imageContainer {
     margin-right: 0;
     margin-bottom: 20px;

@@ -62,7 +62,14 @@
   text-decoration: none;
 }
 /* responsive  */
-@media screen and (max-width: 922px) {
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  .menuItems li a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:1000px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -170,11 +177,13 @@
   }
   .menuItems li a:hover{
     color:rgb(21, 134, 96) ;
+    transition: transform 0.3s ease-in-out;
   }
   
 
   .menuOpen {
     display: flex;
     z-index: 1;
+    transform: translateX(0);
   }
 }
